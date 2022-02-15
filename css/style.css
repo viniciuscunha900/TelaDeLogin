@@ -42,7 +42,7 @@ body {
   /* border: 1px solid green; */
   padding: 88px;
 }
-form,
+/*form,*/
 span,
 a {
   /* border: 1px solid orange; */
@@ -53,7 +53,8 @@ a {
   line-height: 30px;
   font-family: "Poppins", sans-serif;
   color: #808ba3;
+  margin-right: 15px;
 }
-form input {
-  margin-left: 30px;
+form #link input {
+  margin-left: 0;
 }
