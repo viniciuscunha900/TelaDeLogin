@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ebeeef;
+}
+#container {
+  /* border: 1px solid red; */
+  width: 671px;
+  height: 530px;
+  margin: 116px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+#container #header {
+  height: 181px;
+  padding-top: 0;
+  display: flex;
+  background: rgba(0, 0, 0, 0.6) url(../imagens/notebook.jpg);
+  background-blend-mode: darken;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+  /* opacity: 0.5; */
+}
+#container #header h2 {
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+}
+#container #formular {
+  height: 375px;
+  width: 100%;
+  display: flex;
+  /* border: 1px solid green; */
+  padding: 88px;
+}
+form,
+span,
+a {
+  /* border: 1px solid orange; */
+  display: inline;
+  /* flex-direction: column; */
+  padding: 0;
+  width: 100%;
+  line-height: 30px;
+  font-family: "Poppins", sans-serif;
+  color: #808ba3;
+}
+form input {
+  margin-left: 30px;
+}
