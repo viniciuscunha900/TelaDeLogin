@@ -20,17 +20,23 @@
       <div id="formular">
         <form>
           <!-- <fieldset> -->
-          <span>Username</span>
-          <input onclick="change()" type="text" name="name" value="Enter username"/>
+          <fieldset>
+            <span>Username</span>
+            <input onclick="change()" type="text" name="name" value="Enter username"/>
+          </fieldset>
           <br/>
-          <br/>
-          <span>Password</span>
-          <input onclick="alert('test')" type="text" name="password" value="Password"/>
+          <!-- <br/> -->
+          <fieldset>
+            <span>Password</span>
+            <input onclick="alert('test')" type="text" name="password" value="Password"/>
+          </fieldset>
           <br />
-          <div id="link">
-            <input type="checkbox" /> <a href="/"><span>Remember me</span> </a>
-            <span> <a href="/"> Forgot password?</a></span>
-          </div>
+          <fieldset>
+            <div id="link">
+              <input type="checkbox" /> <a href="/"><span>Remember me</span> </a>
+              <span> <a href="/"> Forgot password?</a></span>
+            </div>
+          </fieldset>
           <br/>
           <button type="submit">Login</button>
           <!-- </fieldset> -->
