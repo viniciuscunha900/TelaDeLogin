@@ -18,8 +18,8 @@ body {
   background-color: #ffffff;
 }
 #container #header {
-  height: 181px;
-  padding-top: 0;
+  height: 200px;
+  padding: 0 auto 0 auto;
   display: flex;
   background: rgba(0, 0, 0, 0.6) url(../imagens/notebook.jpg);
   background-blend-mode: darken;
@@ -39,10 +39,12 @@ body {
   height: 375px;
   width: 100%;
   display: flex;
-  /* border: 1px solid green; */
-  padding: 88px;
+  padding: 50px 0 0 100px;
+  /* border: 1px solid red; */
+  align-items: center;
+  padding: 0px;
 }
-/*form,*/
+
 span,
 a {
   /* border: 1px solid orange; */
@@ -54,24 +56,55 @@ a {
   font-family: "Poppins", sans-serif;
   color: #808ba3;
   margin-right: 15px;
+  text-decoration: none;
 }
-
+form{
+  /* border: 1px solid green; */
+  width: 100%;
+  padding: 30px 0px 0px 50px;
+}
+#enter span, input{
+  font-size: 15px;
+  color: #A3A3A3;
+  
+}
+form #enter{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 60px;
+}
+form #enter input{
+  width:390px;
+  margin-bottom: 30px;
+  /* border: 1px solid red; */
+}
 fieldset, input{
-  border: none;:
+  border: none;
 }
 #link div{
-  /* border: 1px solid green; */
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-left: 90px;
 
 }
+#link div input{
+  width: 20px;
+  height:20px;
+  margin-top: 10px;
+  
+}
 #link span{
-  /* margin-right: 500px; */
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display:flex;
   justify-content: space-between;
   font-size: 13px;
+}
+#link #mark{
+  margin-left: 0;
 }
 input{
   border-bottom: 1px solid #808ba3;
@@ -81,4 +114,8 @@ input{
   width: 300px;
   display: inline;
   margin-right: 0;
+}
+form fieldset button{
+  border: 1 px solid green;
+  width: 80px;
 }

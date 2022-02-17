@@ -19,27 +19,34 @@
       </div>
       <div id="formular">
         <form>
-          <!-- <fieldset> -->
-          <fieldset>
-            <span>Username</span>
-            <input onclick="change()" type="text" name="name" value="Enter username"/>
-          </fieldset>
-          <br/>
-          <!-- <br/> -->
-          <fieldset>
-            <span>Password</span>
-            <input onclick="alert('test')" type="text" name="password" value="Password"/>
-          </fieldset>
+          <div id="enter">
+            <fieldset>
+              <span>Username</span>
+              <input class="data" onfocus="change()" type="text" name="name" value="Enter username"/>
+            </fieldset>
+            <br/>
+            <!-- <br/> -->
+            <fieldset>
+              <span>Password</span>
+              <input class="data" onfocus="change()" type="text" name="password" value="Enter password"/>
+            </fieldset>
+          </div>
           <br />
           <fieldset id="link">
             <div>
-              <input type="checkbox" /><span>Remember me</span>
-              <span> <a href="/"> Forgot password?</a></span>
+              <input type="checkbox" />
+              <div id="mark">
+                <span>Remember me</span>
+                <span> <a href="/"> Forgot password?</a></span>
+              </div>
             </div>
           </fieldset>
           <br/>
-          <button type="submit">Login</button>
-          <!-- </fieldset> -->
+          <fieldset>
+            <button type="submit">Login</button>
+          </fieldset>
+          
+          
         </form>
       </div>
     </div>
