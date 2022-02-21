@@ -174,3 +174,25 @@ form fieldset a button:hover{
 input:focus {
   outline: 0;
 }
+
+@media (max-width: 568px){
+  #container{
+    margin: 0px;
+    padding: 0px;
+    width: 483px;
+    height: 568px;
+    overflow-x: hidden;
+  }
+  #link div{
+    margin-left: 0px;
+  }
+}
+@media (max-width: 667px){
+  #container{
+    margin: 0px;
+    padding: 0px;
+    width: 500px;
+    height: 637px;
+    overflow-x: hidden;
+  }
+}
