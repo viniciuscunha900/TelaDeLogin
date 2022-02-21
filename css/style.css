@@ -44,14 +44,11 @@ body {
   width: 100%;
   display: flex;
   padding: -10px 0 0 100px;
-  /* border: 1px solid red; */
   align-items: center;
 }
 
 span, a {
-  /* border: 1px solid orange; */
   display: inline;
-  /* flex-direction: column; */
   padding: 0;
   width: 100%;
   line-height: 30px;
@@ -62,13 +59,11 @@ span, a {
 }
 
 form{
-  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
   padding: -30px 0px ;
-  /* margin-bottom: 0px;   */
   margin-bottom: 40px;
   margin-left: 30px;
   margin-right: -50px;
@@ -114,7 +109,6 @@ fieldset, input{
 
 }
 #link div #mark{
-  /* border: 1px solid red; */
   margin-left: 0px;
   width:450px;
   display: flex;
@@ -151,13 +145,16 @@ form fieldset #button{
   display: flex;
   flex-direction:row;
   justify-content: flex-start;
-  /* border: 1px solid red; */
-  width: 50%;
+  width: 23%;
   margin-left: 150px;
   margin-top: -20px;
+  
+}
+#button a{
+  border-style: none;
+  border-radius: 30px;
 }
 form fieldset a button{
-  border: 1 px solid green;
   width: 150px;
   height:50px;
   background:#56B646;
@@ -173,4 +170,7 @@ form fieldset a button:hover{
   background:#333333;
   color: white;
   transition: 500ms;
+}
+input:focus {
+  outline: 0;
 }
