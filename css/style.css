@@ -234,9 +234,6 @@ input:focus {
     margin-left: 0px;
     margin-bottom: 10px;
   }
-  #link #senha{
-    /* border: 1px solid orange; */
-  }
   #link #senha span a{
     margin-left: -50px;
     
@@ -250,7 +247,7 @@ input:focus {
     /* width: 23%; */
      margin-left: 90px;
     /* margin-top: -15px; */ 
-    border: 1px solid green;
+    /* border: 1px solid green; */
     
   }
 }
@@ -260,8 +257,7 @@ input:focus {
     padding: 0px;
     width: 375px;
     height: 635px;
-    overflow-x: hidden;
-    
+    overflow-x: hidden;  
   }
   form{
     display: flex;
@@ -284,8 +280,10 @@ input:focus {
     padding-right: 10px;
   }
   form #enter input{
-    width:370px;
+    width:360px;
     margin-bottom: 30px;
+    /* margin-left: auto;
+    margin-right: auto; */
     /* line-height:25px */
   }
   #link{
@@ -293,7 +291,7 @@ input:focus {
     flex-direction:row;
     justify-content: space-between;
     margin-top: -30px;  
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
   }
   #link div{
     width: 300px;
@@ -307,7 +305,7 @@ input:focus {
     /* border: 1px solid green; */
   }
   #link #senha{
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     margin-right: -73px;
   }
   #link #senha span a{
@@ -323,7 +321,86 @@ input:focus {
     /* width: 23%; */
      margin-left: 120px;
     /* margin-top: -15px; */ 
-    border: 1px solid green;
+    /* border: 1px solid green; */
+    
+  }
+}
+@media (min-width:376px) and (max-width: 1023px){
+  #container{
+    margin: 0px auto;
+    padding: 0px;
+    width: 483px;
+    height: 667px;
+    overflow-x: hidden;
+    /* border: 1px solid red; */
+    
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 375px;
+    padding: -30px 0px ;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    margin-top: -100px;
+    /* margin-right: -50px; */
+  }
+  form #enter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 0px;
+    /* border: 1px solid red; */
+    padding-left: 10px;
+    padding-right: 10px;
+    margin:0 auto;
+    
+  }
+  form #enter input{
+    width:430px;
+    margin-bottom: 30px;
+    
+    /* line-height:25px */
+  }
+  #link{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin: -10 auto;  
+    /* border: 1px solid blue; */
+    
+  }
+  #link div{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0px auto 0px auto; */
+    margin-left: 0px;
+    margin-bottom: 10px;
+    /* border: 1px solid green; */
+  }
+  #link #senha{
+    /* border: 1px solid orange; */
+    margin-right: -73px;
+  }
+  #link #senha span a{
+    margin-left: -50px;
+    
+    padding-left: 10px;
+  }
+  form fieldset #button{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    /* width: 23%; */
+     margin-left: 10px;
+    /* margin-top: -15px; */ 
+    /* border: 1px solid green; */
     
   }
 }
