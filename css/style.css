@@ -65,8 +65,8 @@ form{
   width: 100%;
   padding: -30px 0px ;
   margin-bottom: 40px;
-  margin-left: 30px;
-  margin-right: -50px;
+  margin-left: 0px;
+  /* margin-right: -50px; */
 }
 
 #enter #password{
@@ -97,16 +97,20 @@ fieldset, input{
   flex-direction:row;
   justify-content: space-between;
   margin-top: -30px;  
+  /* border: 1px solid red; */
 }
 #link div{
+  width: 400px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 0px auto 0px auto;
   margin-left: 150px;
   margin-bottom: 10px;
-
+}
+#link div #senha{
+  margin-left: 0px;
 }
 #link div #mark{
   margin-left: 0px;
@@ -116,11 +120,13 @@ fieldset, input{
   flex-direction:row;
   margin-left: 5px;
 }
-
-#link div input{
+#link div #mark span{
+  padding-left: 5px;
+}
+#link div #mark input{
   width: 18px;
   height:18px;
-  margin-top: -10px;
+  margin-top: 0px;
   margin-left: 0px;
   display: flex;
 }
@@ -147,7 +153,8 @@ form fieldset #button{
   justify-content: flex-start;
   width: 23%;
   margin-left: 150px;
-  margin-top: -20px;
+  margin-top: -15px;
+  /* border: 1px solid green; */
   
 }
 #button a{
@@ -174,25 +181,150 @@ form fieldset a button:hover{
 input:focus {
   outline: 0;
 }
+/* adicionando media queries */
 
-@media (max-width: 568px){
+@media (max-width: 320px){
   #container{
     margin: 0px;
     padding: 0px;
-    width: 483px;
+    width: 319px;
     height: 568px;
     overflow-x: hidden;
+    
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    padding: -30px 0px ;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    /* margin-right: -50px; */
+  }
+  form #enter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 0px;
+    /* border: 1px solid red; */
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  form #enter input{
+    width:290px;
+    margin-bottom: 30px;
+    /* line-height:25px */
+  }
+  #link{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-top: -30px;  
+    /* border: 1px solid blue; */
   }
   #link div{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0px auto 0px auto; */
     margin-left: 0px;
+    margin-bottom: 10px;
+  }
+  #link #senha{
+    /* border: 1px solid orange; */
+  }
+  #link #senha span a{
+    margin-left: -50px;
+    
+    padding-left: 10px;
+  }
+  form fieldset #button{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    /* width: 23%; */
+     margin-left: 90px;
+    /* margin-top: -15px; */ 
+    border: 1px solid green;
+    
   }
 }
-@media (max-width: 667px){
+@media (min-width:321px) and (max-width: 375px){
   #container{
     margin: 0px;
     padding: 0px;
-    width: 500px;
-    height: 637px;
+    width: 375px;
+    height: 635px;
     overflow-x: hidden;
+    
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 375px;
+    padding: -30px 0px ;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    /* margin-right: -50px; */
+  }
+  form #enter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 0px;
+    /* border: 1px solid red; */
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  form #enter input{
+    width:370px;
+    margin-bottom: 30px;
+    /* line-height:25px */
+  }
+  #link{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-top: -30px;  
+    border: 1px solid blue;
+  }
+  #link div{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0px auto 0px auto; */
+    margin-left: 0px;
+    margin-bottom: 10px;
+    /* border: 1px solid green; */
+  }
+  #link #senha{
+    border: 1px solid orange;
+    margin-right: -73px;
+  }
+  #link #senha span a{
+    margin-left: -50px;
+    
+    padding-left: 10px;
+  }
+  form fieldset #button{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    /* width: 23%; */
+     margin-left: 120px;
+    /* margin-top: -15px; */ 
+    border: 1px solid green;
+    
   }
 }
+
